@@ -1,0 +1,196 @@
+<main>
+  <div class="container py-4">
+
+    <div class="slide-tl p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Join our team</h1>
+        <p class="col-md-8 fs-4">Founded by classmates Thoma, Alban, Ermina, Petraq, Sanja and Aulona in 2022, a travel
+          mix-up sparked a revolutionary approach to tourism. We were part of a dynamic group and we are were passionate
+          about travelling and discovering out different areas of our beloved, undiscovered country. The result? A
+          platform that gathers the best activities across Albania, all in one place.
+
+        </p>
+        <hr class="my-4">
+        <div class="row">
+          <img src="assets/images/home-pictures/team.png" class="d-block mx-auto" alt=""
+            style="width: 500px; height:500px">
+        </div>
+        <p class="">From humble beginnings in a small student room to becoming the industry leader, a lot has changed at
+          GuideAlbania. What hasn’t is our commitment to creating amazing experiences and ensuring that you love where
+          you’re going.</p>
+        <button class="btn btn-primary btn-lg mx-auto d-block" id="team" type="button" (click)="toggle()">Team</button>
+        <!-- This div is to show  cards -->
+
+        <div [@popOverState]="stateName">
+
+          <div *ngIf="hidden" class="d-flex justify-content-evenly" id="show">
+            <div class="row">
+              <div class="d-flex flex-wrap justify-content-center mr-1">
+
+
+                <!-- member 1 -->
+                <div class="card p-4 mt-4 col-l-4" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+                <!-- member 2 -->
+                <div class="card p-4 mt-4" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+                <!-- member 3 -->
+                <div class="card p-4 mt-4" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+                <!-- member 4 -->
+                <div class="card p-4 mt-4" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+                <!-- member 5 -->
+                <div class="card p-4 mt-4" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+                <!-- member 6 -->
+                <div class="card p-4 mt-4" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+                <!-- member 7 -->
+                <div class="card p-4 mt-4" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>Do you want to join us?</h2>
+          <hr>
+          <h6>Contact us</h6>
+          <p>Computer skills are essential for this position </p>
+          <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Contact Form
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark " style="color: white;">
+          <h5 class="modal-title d-block mx-auto" id="exampleModalLabel">Contact Form</h5>
+        </div>
+        <div class="modal-body">
+
+          <h6>Upload your CV</h6>
+          <hr class="my-4">
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+            <input type="file" class="form-control" id="inputGroupFile01">
+          </div>
+
+
+
+          <h6>Choose position</h6>
+          <hr class="my-4">
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Position
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <br>
+
+
+          <h6>Enter your Name and Last Name</h6>
+          <hr class="my-4">
+          <div class="input-group">
+            <input type="text" required aria-label="First name" class="form-control">
+            <input type="text" required aria-label="Last name" class="form-control">
+          </div>
+
+          <hr class="my-6">
+
+          <h6>Enter your phone number</h6>
+          <div class="input-group mb-3">
+            <input type="number" required class="form-control">
+          </div>
+
+          <hr class="my-6">
+
+          <h6>Enter your email</h6>
+
+          <div class="input-group mb-3">
+            <input type="email" required class="form-control">
+          </div>
+
+
+
+        </div>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-light">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</main>

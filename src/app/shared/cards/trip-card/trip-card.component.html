@@ -1,0 +1,19 @@
+<!-- <div class="box mb-3 text-center" style="width: 15rem;"> -->
+
+<img src="{{ trip?.imageUrl }}" alt="cinque terre" />
+<div class="content">
+  <div class="title">
+    <b>{{ trip.destinationName }}</b>
+  </div>
+  <h4>
+    <i>{{ trip?.shortDescription }}</i>
+  </h4>
+  <!-- <p> Ready for your next adventure?</p> -->
+  <div class="price">
+    <span>{{ trip.price | currency: "€" }}</span>
+  </div>
+  <button (click)="onSelect(trip)" class="button-51" role="button">
+    VIEW DETAILS
+  </button>
+</div>
+<!-- </div> -->

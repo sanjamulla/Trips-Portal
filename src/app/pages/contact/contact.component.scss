@@ -1,0 +1,109 @@
+
+
+.sectionwithimage {
+    background-image: url(https://alpenews.al/wp-content/uploads/2019/04/58444992_841275662899700_4125806624612810752_n-1.jpg);
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+    max-width: 100%;
+    align-items: flex-end;
+    padding: 10.25rem 0;
+    background-position: center;
+
+}
+.main-container{
+    position: relative;
+    width: 100%;
+    max-width: 1092px;
+    margin: 0 auto !important;
+    padding: 0 20px;
+    float: none !important;  
+}
+.msg-section{
+    justify-content: start;
+    font-size: 3rem;
+    line-height: 3.875rem;
+
+}
+
+.title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #2094E6;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.second-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.th-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2094E6;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.container-accordion {
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+
+// .accordian {
+//     position: relative;
+//     z-index: 1;
+      
+// }
+// .accordian .card {
+//     position: relative;
+//     z-index: 1;
+//     margin-bottom: 10.5rem;
+// }
+// .accordian .card:last-child {
+//     margin-bottom: 0;
+// }
+// .accordian .card .card-header {
+//     background-color: #ffffff;
+//     padding: 0;
+//     border-bottom-color: #ebebeb;
+// }
+// .accordian .card .card-header h6 {
+//     cursor: pointer;
+//     padding: 1.75rem 2rem;
+//     color: #3f43fd;
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -webkit-box-align: center;
+//     -ms-flex-align: center;
+//     -ms-grid-row-align: center;
+//     align-items: center;
+//     -webkit-box-pack: justify;
+//     -ms-flex-pack: justify;
+//     justify-content: space-between;
+// }
+// .accordian .card .card-header h6 span {
+//     font-size: 1.5rem;
+// }
+// .accordian .card .card-header h6.collapsed {
+//     color: #070a57;
+// }
+// .accordian .card .card-header h6.collapsed span {
+//     -webkit-transform: rotate(-180deg);
+//     transform: rotate(-180deg);
+// }
+// .accordian .card .card-body {
+//     padding: 1.75rem 2rem;
+// }
+// .accordian .card .card-body p:last-child {
+//     margin-bottom: 0;
+// }

@@ -1,0 +1,93 @@
+<br>
+<br>
+<br>
+<br>
+<div class="row cover-row">
+  <div class="col-12">
+  </div>
+</div>
+<!-- Search Bar title -->
+  <div class="px-5">
+  <div class="row pt-5 sticky-top">
+    <h1 class="display-10 text-1000 fw-bold">EXPLORE ALBANIA IN A GLANCE</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-4 h-40">
+      <h3 class="display-8 text-primary fw-normal"><i>Discover The Beauty</i></h3>
+      <div class="pt-1 sticky-top">
+        <form class="row g-4 mt-5">
+
+          <!-- Destination -->
+          <div class="col-sm-6 col-md-6 col-xl-5">
+            <div class="input-group-icon">
+              <label class="form-label text-secondary" for="inputDestination">DESTINATION</label>
+              <input class="form-control input-box form-travelportal-control" id="inputDestination" type="text"
+                placeholder="Destination" [(ngModel)]="filters.destination"  [value]="filters.destination" name="destination" />
+              <span class="nav-link-icon text-800 fs--1 input-box-icon">
+                <i class="fas fa-map-marker-alt"> </i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Data -->
+          <div class="col-sm-6 col-md-6 col-xl-5">
+            <div class="input-group-icon">
+              <label class="form-label text-secondary" for="inputDestination">DATE</label>
+              <input class="form-control input-box form-travelportal-control" id="inputdateOne" type="date" />
+              <span class="nav-link-icon text-800 fs--1 input-box-icon">
+                <i class="fas fa-calendar"></i></span>
+            </div>
+          </div>
+
+          <!-- Activites -->
+          <div class="col-sm-6 col-md-6 col-xl-5">
+            <div class="input-group-icon"><label class="form-label text-secondary" for="inputActivity">ACTIVITY</label>
+              <select class="form-select form-travelportal-select input-box" id="inputActivity" [(ngModel)]="filters.activity" name="filters.activity">
+                <option value="" selected="">Select</option>
+                <option value="Hiking">Hiking</option>
+                <option value="Sightseeing">Sightseeing</option>
+                <option value="Rafting">Rafting</option>
+                <option value="Beach">Beach</option>
+              </select>
+              <span class="nav-link-icon text-800 fs--1 input-box-icon">
+                <i class="fas fa-user"> </i></span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-xl-5">
+            <div class="input-group-icon">
+              <label class="form-label text-secondary" for="inputDifficulty">DIFFICULTY</label>
+              <select class="form-select form-travelportal-select input-box" id="inputDifficulty" [(ngModel)]="filters.difficulty" [value]="filters.difficulty" name="filters.difficulty">
+                <option value="" selected="">Select</option>
+                <option value="Easy">Easy</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Tough">Tough</option>
+                <option value="Extreme">Extreme</option>
+              </select>
+              <span class="nav-link-icon text-800 fs--1 input-box-icon">
+                <i class="fas fa-user"> </i></span>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <a class="cta" (click)="filterTrips()">        
+            <span>SEARCH PACKAGES</span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+        </form>
+      </div>
+    </div>
+   
+<!-- Cards starts here -->
+    <div class="col-md-8">
+      <section class="packages" id="packages">
+        <div class="box-container">
+          <trip-card *ngFor="let trip of trips" [trip]="trip" class="box mb-3 text-center" style="width: 15rem;">
+          </trip-card>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
